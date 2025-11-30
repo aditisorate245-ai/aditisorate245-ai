@@ -34,13 +34,18 @@ Beyond academics, I actively participate in cultural and sports activities inclu
 ## Projects
 
 ### AI Assist Mental Health Website
-A digital platform offering basic AI-based emotional analysis and automated mood-tracking graphs to help users understand mental well-being trends.
+A digital platform offering basic AI-based emotional analysis and automated mood-tracking graphs to help users understand mental well-being trends.  
+Live Website: **https://mind-grove-guide.vercel.app/**  
+
 
 ### Disaster Management Dashboard
-A dashboard-style system that visualizes disaster-affected regions and risk-severity data to support faster and more informed decision-making.
+A dashboard-style system that visualizes disaster-affected regions and risk-severity data to support faster and more informed decision-making.  
+Live Website: **https://train-shield-india.vercel.app/**  
+
 
 ### Rural Tour / Cab Integration Website
-A concept to integrate cab services in rural areas, improving transportation accessibility and supporting local travel requirements.
+A concept to integrate cab services in rural areas, improving transportation accessibility and supporting local travel requirements.  
+
 
 ---
 
