@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Backgrounds */
+    --background: 195 55% 97%;
+    --foreground: 215 25% 15%;
+
+    /* Cards */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    /* Popovers */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary - Calming Teal */
+    --primary: 185 65% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 185 60% 92%;
+
+    /* Secondary - Warm Coral */
+    --secondary: 12 85% 65%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 12 90% 95%;
+
+    /* Muted */
+    --muted: 195 40% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    /* Accent - Soft Yellow */
+    --accent: 45 95% 65%;
+    --accent-foreground: 215 25% 15%;
+    --accent-light: 45 100% 95%;
+
+    /* Destructive */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & Inputs */
+    --border: 195 30% 88%;
+    --input: 195 30% 88%;
+    --ring: 185 65% 45%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(185 65% 45%), hsl(195 70% 55%));
+    --gradient-secondary: linear-gradient(135deg, hsl(12 85% 65%), hsl(25 90% 70%));
+    --gradient-accent: linear-gradient(180deg, hsl(195 55% 97%), hsl(195 60% 94%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(185 65% 45% / 0.08);
+    --shadow-medium: 0 8px 30px -4px hsl(185 65% 45% / 0.12);
+    --shadow-hover: 0 12px 40px -8px hsl(185 65% 45% / 0.16);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto px-6 py-16;
+  }
+
+  /* Smooth animations */
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-delay-100 {
+    animation-delay: 0.1s;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animate-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+  }
+}
